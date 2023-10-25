@@ -308,6 +308,59 @@ main .section_header .container .thumb_img {
 main .section_header .container .thumb_img img {
   height: 170px;
 }
+main .resturant-section {
+  padding: 60px 16px;
+}
+main .resturant-section .swiper {
+  display: flex;
+  padding: 16px;
+}
+main .resturant-section .category_card {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  border-radius: 24px;
+}
+main .resturant-section .category_card .icon {
+  width: 100px;
+  height: 100px;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(244, 47, 44, 0.6078431373);
+  border-radius: 50%;
+  border: 4px solid transparent;
+}
+main .resturant-section .category_card .icon img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 54%;
+}
+main .resturant-section .category_card h5 {
+  margin: 0;
+  margin-top: 16px;
+  font-size: 22px;
+}
+main .resturant-section .category_card h5 a {
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+main .resturant-section .category_card h5 a:hover {
+  color: #f42f2c;
+}
+main .resturant-section .category_card p {
+  font-size: 14px;
+  color: #222;
+  line-height: 20px;
+}
+main .resturant-section .category_card.active .icon {
+  border-color: #dedede;
+}
 main .shopppingCart {
   padding: 60px 16px;
 }
@@ -431,10 +484,11 @@ main .shopppingCart .items_list .list_total_procced .subtotal b {
 }
 main .shopppingCart .items_list .list_total_procced .place_order {
   background: #000;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  height: 56px;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
@@ -443,6 +497,21 @@ main .shopppingCart .items_list .list_total_procced .place_order a {
 }
 main .shopppingCart .items_list .list_total_procced .place_order:hover {
   background: #f42f2c;
+}
+main .shopppingCart .items_list .list_total_procced .address_field {
+  flex: 2;
+}
+main .shopppingCart .items_list .list_total_procced .address_field input {
+  border: none;
+  background: none;
+  outline: none;
+  height: 56px;
+  font-size: 14px;
+  width: 100%;
+  padding: 8px 16px;
+  background: #fafafa;
+  border-radius: 4px;
+  box-shadow: none !important;
 }
 main .myAccount {
   padding: 60px 16px;
@@ -820,6 +889,7 @@ main .login-section .form-wrapper .contact-info .follow .social a:hover {
 
 .product-card {
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  height: 100%;
   padding: 24px;
   display: flex;
   gap: 16px;
@@ -839,6 +909,19 @@ main .login-section .form-wrapper .contact-info .follow .social a:hover {
   border-radius: 0 8px 0 8px;
   background: #f42f2c;
   color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.product-card span button {
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+}
+.product-card span:hover {
+  background: #000;
 }
 .product-card .pro_img {
   width: 100%;

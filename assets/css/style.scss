@@ -322,6 +322,56 @@ main {
       }
     }
   }
+  .resturant-section {
+    padding: 60px 16px;
+    .swiper {
+      display: flex;
+      padding: 16px;
+    }
+    .category_card {
+      padding: 24px;
+      @include centerFlex();
+      flex-direction: column;
+      box-shadow: $shadow;
+      border-radius: 24px;
+      .icon {
+        width: 100px;
+        height: 100px;
+        box-shadow: $shadow;
+        transition: $transition;
+        @include centerFlex();
+        background: #f42f2c9b;
+        border-radius: 50%;
+        img {
+          object-fit: contain;
+          width: 54%;
+        }
+        border: 4px solid transparent;
+      }
+      h5 {
+        margin: 0;
+        margin-top: 16px;
+        font-size: 22px;
+        a {
+          color: $main;
+          transition: $transition;
+          &:hover {
+            color: $second;
+          }
+        }
+      }
+      p {
+        font-size: 14px;
+        color: $dark;
+        line-height: 20px;
+      }
+      &.active {
+        .icon {
+          border-color: #dedede;
+        }
+      }
+    }
+  }
   .shopppingCart {
     padding: 60px 16px;
     .fillCart {
@@ -432,8 +482,9 @@ main {
         }
         .place_order {
           background: $main;
+          flex: 1;
           @include centerFlex();
-          padding: 12px;
+          height: 56px;
           transition: $transition;
           border-radius: 4px;
           a {
@@ -441,6 +492,19 @@ main {
           }
           &:hover {
             background: $second;
+          }
+        }
+        .address_field {
+          flex: 2;
+          input {
+            @include clearInput();
+            height: 56px;
+            font-size: 14px;
+            width: 100%;
+            padding: 8px 16px;
+            background: #fafafa;
+            border-radius: 4px;
+            box-shadow: none !important;
           }
         }
       }
@@ -802,6 +866,7 @@ main {
 }
 .product-card {
   box-shadow: $shadow;
+  height: 100%;
   padding: 24px;
   display: flex;
   gap: 16px;
@@ -818,6 +883,17 @@ main {
     border-radius: 0 8px 0 8px;
     background: $second;
     color: $white;
+    transition: $transition;
+    button {
+      @include clearInput();
+      color: $white;
+      font-size: 24px;
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      background: $main;
+    }
   }
   .pro_img {
     width: 100%;

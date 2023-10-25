@@ -38,3 +38,21 @@ for (let i = 0; i < navLinks.length; i++) {
     navLinks[0].classList.add("active");
   }
 }
+// end nav-links highlight 
+//  start categories swiper
+let aboutSwiper = new Swiper(".categoriesSwiper", {
+  spaceBetween: 50,
+  grabCursor: true,
+  navigation: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 2
+    },
+    350: {
+      slidesPerView: 1
+    }
+  }
+});

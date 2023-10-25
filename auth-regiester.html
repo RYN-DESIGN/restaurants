@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody - Regiester</title>
+    <!-- ****** CSS ****** -->
+    <!-- LTR Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- libraries [Font Awesome 6 pro , Swiper , Aos animation , Fancy box] -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- app style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">Foody</a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li>
+                    <a href="about-us.html" class="nav-link">About us</a>
+                </li>
+                <li>
+                    <a href="restaurants.html" class="nav-link">Restaurants</a>
+                </li>
+                <li>
+                    <a href="contct-us.html" class="nav-link">Contact us</a>
+                </li>
+            </ul>
+            <div class="btns">
+                <!-- if user logged in this link will point to My Account page -->
+                <div class="btn">
+                    <a href="auth-login.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Login</span>
+                    </a>
+                </div>
+                <div class="btn">
+                    <a href="shopping-cart.html">
+                        <i class="fa-light fa-bag-shopping"></i>
+                        <span> $00.00</span>
+                    </a>
+                </div>
+                <div class="btn">
+                    <button class="toggler">
+                        <i class="fa-sharp fa-light fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main wrapper -->
+    <main>
+        <div class="login-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <form action="">
+                                <h2>Sign up</h2>
+                                <h5>It's time to create your Foody account and savor the flavors</h5>
+                                <div class="form-group">
+                                    <div class="input-field">
+                                        <label for="fullName"><i class="fa-regular fa-user"></i> Full Name</label>
+                                        <input type="text" id="fullName" name="fullName" placeholder="Enter your name">
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="userName"><i class="fa-regular fa-user"></i> User Name</label>
+                                        <input type="text" id="userName" name="userName" placeholder="Choose user name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-field">
+                                        <label for="Address"><i class="fa-sharp fa-regular fa-location-dot"></i>
+                                            Address</label>
+                                        <input type="text" id="Address" name="Address" placeholder="Enter your address">
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="City"><i class="fa-sharp fa-regular fa-location-dot"></i>
+                                            City</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>City</option>
+                                            <option value="Riyadh">Riyadh</option>
+                                            <option value="Jeddah">Jeddah</option>
+                                            <option value="Mecca">Mecca </option>
+                                            <option value="Medina ">Medina </option>
+                                        </select>
+                                        <span><i class="fa-regular fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <label for="password"><i class="fa-light fa-lock"></i> Password</label>
+                                    <input type="password" id="password" name="password"
+                                        placeholder="•••••••••••••••••••••••">
+                                </div>
+                                <button type="submit">Sign up</button>
+                                <p>Already have an account ? <a href="auth-login.html">Sign In</a></p>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="img">
+                                <img src="assets/images/signup.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="logo">
+                        <a href="#home">Foody <span></span></a>
+                    </div>
+                    <p>
+                        Foody is not just a website; it's a community of food enthusiasts. Share your foodie
+                        experiences, discover hidden gems, and connect with fellow connoisseurs.
+                    </p>
+                    <div class="social">
+                        <a href="#home"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#home"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#home"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#home"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <h3>Restaurants</h3>
+                    <ul>
+                        <li><a href="#">Italian Pasta</a></li>
+                        <li><a href="#">Beef Burger</a></li>
+                        <li><a href="#">Chinese Sushi</a></li>
+                        <li><a href="#">Italian Pizza</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Payment & Tax</a></li>
+                        <li><a href="#">Order Delivery</a></li>
+                        <li><a href="#">Terms of Services</a></li>
+                        <li><a href="#">My account</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h3>Stay connected</h3>
+                    <form action="">
+                        <input type="text" placeholder="Email Address">
+                        <button type="submit"><i class="fa-solid fa-chevron-right"></i></button>
+                    </form>
+                    <h4><i class="fa-solid fa-headset"></i><a href="tel++17602781253">+17602781253</a></h4>
+                    <h4><i class="fa-solid fa-envelope"></i><a href="mailto:Foody@gmail.com">Foody@gmail.com</a></h4>
+                </div>
+                <div class="copy d-flex align-items-center justify-content-center">
+                    <p>
+                        Copyright © 2023 All rights reserved | This template is made with
+                        <i class="fa-light fa-heart"></i> by OurTeam
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- *********** Javascript *********** -->
+    <!-- libraries -->
+    <!-- [jQuery v3.6.4 - Bootstrap v5.3.0 - Swiper 8.4.5 - Aos ] -->
+    <script src="assets/js/main.js"></script>
+    <!-- custom scripts -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

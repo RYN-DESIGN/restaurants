@@ -322,6 +322,229 @@ main {
       }
     }
   }
+  .about_section {
+    padding: 60px 16px;
+    .feature_card {
+      border-radius: 30px;
+      box-shadow: $shadow;
+      padding: 32px 16px;
+      @include centerFlex();
+      flex-direction: column;
+      gap: 12px;
+      img {
+        height: 42px;
+      }
+      h4 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: $main;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #777777;
+        text-align: center;
+      }
+    }
+    .fearures_text {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 16px;
+      .hint {
+        font-size: 16px;
+        color: $second;
+        font-weight: 600;
+      }
+      h3 {
+        color: #000;
+        font-weight: 600;
+        font-size: 42px;
+      }
+      .about {
+        color: #181818;
+        line-height: 26px;
+        font-size: 14px;
+      }
+      a {
+        padding: 8px 12px;
+        width: 160px;
+        @include centerFlex();
+        background: $main;
+        border-radius: 4px;
+        color: white;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        transition: $transition;
+        &:hover {
+          background: $second;
+        }
+      }
+    }
+  }
+  .testimonials {
+    background-color: #fafafa;
+    padding: 60px 16px;
+    .image {
+      width: 100%;
+      @include centerFlex();
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+    .testimonials_content {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 16px;
+      .hint {
+        font-size: 16px;
+        color: $second;
+        font-weight: 600;
+      }
+      h3 {
+        color: #000;
+        font-weight: 600;
+        font-size: 42px;
+      }
+    }
+    .testimonialsSwiper {
+      width: 100%;
+      display: flex;
+      .testi_content {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        p {
+          font-size: 14px;
+          color: $main;
+          font-style: italic;
+          line-height: 26px;
+        }
+        h5 {
+          color: $main;
+          font-weight: 600;
+          font-size: 22px;
+        }
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        top: initial;
+        bottom: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $second;
+        @include centerFlex();
+        &::after {
+          font-family: "Font Awesome 6 pro";
+          content: "\f054";
+          font-size: 18px;
+          color: $white;
+        }
+      }
+      .swiper-button-prev {
+        top: initial;
+        left: initial;
+        right: 80px;
+        bottom: 0;
+        &::after {
+          content: "\f053";
+        }
+      }
+    }
+  }
+  .related_products {
+    padding: 60px 16px;
+    h2 {
+      font-size: 24px;
+      color: $main;
+      font-weight: 600;
+    }
+  }
+  .product-details-section {
+    padding: 60px 16px;
+    .image {
+      width: 100%;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: $shadow;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .pro_overview {
+      padding: 0 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      h3 {
+        font-size: 32px;
+        color: $main;
+        font-weight: 600;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 24px;
+        color: $second;
+        margin: 0;
+      }
+      p {
+        font-size: 14px;
+        color: #777777;
+        line-height: 24px;
+      }
+      .category {
+        font-size: 18px;
+        line-height: 32px;
+        color: #777777;
+        span {
+          color: $main;
+          font-weight: 600;
+        }
+      }
+      h6 {
+        color: $second;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      ul {
+        list-style: disc;
+        padding-left: 16px;
+        li {
+          color: $main;
+          font-size: 14px;
+          line-height: 28px;
+        }
+      }
+      .add_cart {
+        height: 100%;
+        width: 100%;
+        button {
+          padding: 8px 12px;
+          width: 100%;
+          background: $main;
+          border-radius: 4px;
+          color: white;
+          font-size: 14px;
+          outline: none;
+          border: none;
+          transition: $transition;
+          &:hover {
+            background: $second;
+          }
+        }
+      }
+    }
+  }
   .resturant-section {
     padding: 60px 16px;
     .swiper {
@@ -426,30 +649,6 @@ main {
             font-size: 20px;
             color: $main;
             font-weight: 600;
-          }
-        }
-        .quantity {
-          display: flex;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          button {
-            width: 32px;
-            @include clearInput();
-            border: 1px solid $main;
-            i {
-              color: $main;
-            }
-          }
-          input {
-            text-align: center;
-            @include clearInput();
-            border-top: 1px solid $main;
-            border-bottom: 1px solid $main;
-            width: 64px;
-            &::-webkit-inner-spin-button {
-              display: none;
-            }
           }
         }
         .action {
@@ -937,6 +1136,30 @@ main {
         font-weight: 600;
         font-size: 12px;
       }
+    }
+  }
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  button {
+    width: 32px;
+    @include clearInput();
+    border: 1px solid $main;
+    i {
+      color: $main;
+    }
+  }
+  input {
+    text-align: center;
+    @include clearInput();
+    border-top: 1px solid $main;
+    border-bottom: 1px solid $main;
+    width: 64px;
+    &::-webkit-inner-spin-button {
+      display: none;
     }
   }
 }

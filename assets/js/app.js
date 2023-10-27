@@ -56,3 +56,10 @@ let aboutSwiper = new Swiper(".categoriesSwiper", {
     }
   }
 });
+//end categories swiper
+var swiper = new Swiper(".testimonialsSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
